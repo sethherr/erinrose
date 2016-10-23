@@ -1,277 +1,85 @@
-/**
- * Site header
- */
-.site-header {
-    background: #faf9f5;
-    border-top: 5px solid $title-color;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-    text-align: center;
+section { margin-top: 60px; } // All blocks are section tags
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-    font-family: "Playfair Display";
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 56px;
-    margin-bottom: 0;
-
-    &,
-    &:visited {
-        color: $title-color;
-    }
-}
-
-
-
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-
-    .username {
-        font-size: 80%;
-    }
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-
-
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-}
-
-.post-meta {
-    color: $brand-color;
-}
-
-.post-link {
+.blockquote-wrapper {
+  cite {
     display: block;
-    font-family: "Playfair Display";
-    font-size: 44px;
-
-    @include media-query($on-palm) {
-        font-size: 1.1em;
-    }
+    text-align: right;
+    color: lighten($grey-color, 5%);
+    a { color: lighten($grey-color, 5%); }
+  }
 }
 
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    color: $grey-color;
-    font-family: "Playfair Display";
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
-}
-
-#post-nav {
-    display: block;
-    padding: 0 2em;
-
-    .next,
-    .previous {
+.who-we-are {
+  ul {
+    margin: 30px 0 0 0;
+    list-style-type: none;
+    li {
+      display: block;
+      margin: 15px 0 0 0;
+      @extend %clearfix;
+      img {
+        display: block;
         float: left;
-        margin: 1rem 0;
-        width: 50%;
-
-        span:after,
-        span:before {
-            border: solid transparent 4px;
-            content: "";
-            display: inline-block;
-            height: 0;
-            margin: 0 0.5rem;
-            top: 0.8em;
-            width: 0;
-        }
+        margin: 8px 12px 0 0;
+        width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+        width:         calc(25% - (#{$spacing-unit} / 2));
+      }
     }
-
-    .next {
-        span:before {
-            border-left: 0;
-            border-right-color: $grey-color;
-        }
-    }
-
-    .previous {
-        text-align: right;
-
-        span:after {
-            border-left-color: $grey-color;
-            border-right: 0;
-        }
-    }
-
-    @include media-query($on-palm) {
-        padding: initial;
-
-        .next,
-        .previous {
-            text-align: center;
-            width: 100%;
-        }
-    }
-
-    span {
-        color: $brand-color;
-        display: block;
-        font-family: Montserrat;
-        font-size: 0.75rem;
-        font-style: normal;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-    }
-
-    a {
-        color: $grey-color;
-        font-style: italic;
-    }
+  }
 }
 
-
-
-/**
- * Table of Contents
- */
-.table-of-contents {
-    h1 {
-        color: $brand-color;
-        display: block;
-        font-family: "Playfair Display";
-        font-size: 44px;
-        text-align: center;
-
-        @include media-query($on-laptop) {
-            font-size: 36px;
-        }
-    }
-
-    span {
-        color: $grey-color;
-    }
+$pricing-border-color: lighten($grey-color, 5%);
+$pricing-padding-left: $spacing-unit * .5;
+.pricing {
+  max-width: 770px;
+  margin: 60px auto;
+  table {
+    border-collapse: collapse;
+    background: transparent;
+    width: 100%;
+  }
+  tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    td:last-of-type { border-right: none; }
+    th:first-of-type { border-right: 1px solid $pricing-border-color; }
+  }
+  th {
+    font-weight: normal;
+    border: none;
+    font-size: 120%;
+  }
+  th, td {
+    text-align: left;
+    padding: (0.5 * $pricing-padding-left) $pricing-padding-left;
+  }
+  td {
+    border-top: 1px solid $pricing-border-color;
+    border-left: none;
+    border-bottom: none;
+    border-right: 1px solid $pricing-border-color;
+  }
 }
 
+@media(min-width: 800px) {
+  .pricing table { font-size: 115%; }
+}
 
+.contact-us {
+  font-size: 125%;
+  font-style: italic;
+  display: block;
+  margin: 60px auto;
+  text-align: center;
+  width: 200px;
+  &:hover { text-decoration: underline; }
+}
 
-/**
- * Error pages
- */
-.error {
-    text-align: center;
+hr.contact-us-hr {
+  width: 75%;
+  margin: 120px auto 0;
+  display: block;
+  border: none;
+  border-top: 1px solid $grey-color-light;
 }

@@ -31,14 +31,22 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>
 {% capture intro_include %}{% include intro.markdown %}{% endcapture %}
+{% capture who_we_are_include %}{% include who_we_are.markdown %}{% endcapture %}
+{% capture pricing_include %}{% include pricing.markdown %}{% endcapture %}
 {% capture references_include %}{% include references.markdown %}{% endcapture %}
 <body>
 
   <div class="page-content">
     <div class="wrapper">
-      {{ intro_include | markdownify }}
-      {{ references_include | markdownify }}
+      <section>{{ intro_include | markdownify }}</section>
+      <section class="blockquote-wrapper">{{ references_include | markdownify }}</section>
+      <section class="who-we-are">{{ who_we_are_include | markdownify }}</section>
     </div>
+    <section class="pricing">{{ pricing_include | markdownify }}</section>
+    <section>
+      <hr class="contact-us-hr">
+      <em><a class="contact-us" href="mailto:fake@email.com">Contact us</a></em>
+    </section>
   </div>
 
 </body>

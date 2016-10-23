@@ -1,8 +1,3 @@
 # Creative Copy Collective
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Snackwave you probably haven't heard of them blog +1, post-ironic locavore coloring book. Distillery glossier knausgaard, vegan subway tile retro before they sold out everyday carry man braid chartreuse kinfolk affogato. Fingerstache typewriter chillwave sustainable vice direct trade. Skateboard kitsch gochujang, vice jean shorts unicorn humblebrag deep v ugh chartreuse chillwave. Bitters wayfarers affogato post-ironic pitchfork food truck. Irony readymade migas, seitan tbh hoodie gochujang. 
